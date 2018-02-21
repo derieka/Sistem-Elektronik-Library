@@ -1,0 +1,1 @@
+SELECT buku.id_buku, buku.judul, buku.isbn, buku.pengarang, peminjaman.id_anggota, peminjaman.tgl_pinjam, anggota.nama, anggota.jurusan FROM buku INNER JOIN peminjaman ON buku.isbn=peminjaman.id_buku INNER JOIN anggota ON peminjaman.id_anggota=anggota.nis_nip WHERE buku.
